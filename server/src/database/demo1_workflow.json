@@ -1,0 +1,143 @@
+{
+  "trigger": {
+    "message": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+  },
+  "options": {
+    "1": {
+      "title": "About Dr. Ramesh Gowda",
+      "reply": "Choose an option to know more:\n\n1.1️⃣ Dr. Ramesh Gowda's Education & Career\n1.2️⃣ Ward Development Work (2020-2026)\n1.3️⃣ Locate Campaign Office Address\n1.4️⃣ Back to Main Menu"
+    },
+    "2": {
+      "title": "Electricity Issues (BESCOM)",
+      "reply": "For BESCOM issues, please select an option:\n\n2.1️⃣ Report a Power Outage\n2.2️⃣ Billing & Meter Issues\n2.3️⃣ Speak to a Campaign Agent\n2.4️⃣ Back to Main Menu"
+    },
+    "3": {
+      "title": "Water Supply/Sewage (BWSSB)",
+      "reply": "For BWSSB water or sewage issues, please select:\n\n3.1️⃣ Report a Water Pipe Leakage\n3.2️⃣ Book a Subsidized Water Tanker\n3.3️⃣ Sewage Blockage/Overflow\n3.4️⃣ Back to Main Menu"
+    },
+    "4": {
+      "title": "Emergency Helplines",
+      "reply": "Select emergency category:\n\n4.1️⃣ Medical Emergency (Ambulance)\n4.2️⃣ Police Control Room\n4.3️⃣ Fire & Safety Desk\n4.4️⃣ Back to Main Menu"
+    },
+    "5": {
+      "title": "Roads & BBMP Grievances",
+      "reply": "For local infrastructure issues, please select:\n\n5.1️⃣ Report a Pothole\n5.2️⃣ Streetlight Failure\n5.3️⃣ Solid Waste/Garbage pile\n5.4️⃣ Back to Main Menu"
+    },
+    "6": {
+      "title": "Health & Education Initiatives",
+      "reply": "Select initiative details:\n\n6.1️⃣ Locate Nearest 'Namma Clinic'\n6.2️⃣ Free Health Camp Schedule\n6.3️⃣ Govt School Upgrade status\n6.4️⃣ Back to Main Menu"
+    },
+    "7": {
+      "title": "Direct Grievance Desk",
+      "reply": "Choose options:\n\n7.1️⃣ Register General Grievance\n7.2️⃣ Check Grievance Status\n7.3️⃣ Back to Main Menu"
+    },
+    "1.1": {
+      "title": "MLA Biography",
+      "reply": "Biography:\nDr. Ramesh Gowda holds an MBBS from Bangalore Medical College and a Master's in Public Policy from Harvard University. He worked as a public health policy director for 15 years before entering public service."
+    },
+    "1.2": {
+      "title": "Development Work",
+      "reply": "Notable Ward Projects (2020-2026):\n- 50+ Namma Clinics established (Free healthcare)\n- 120km of roads resurfaced and pothole-free\n- 4 public parks renovated with walking tracks\n- 3 government schools upgraded with digital labs."
+    },
+    "1.3": {
+      "title": "Campaign Office",
+      "reply": "Campaign Office Address:\nNo. 42, 8th Cross Road, Malleshwaram, Bengaluru - 560003.\nGoogle Maps Link: https://maps.google.com/mla-office\nOpen hours: 9:00 AM - 8:00 PM daily."
+    },
+    "1.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "2.1": {
+      "title": "Report Power Outage",
+      "reply": "Please reply with your 10-digit BESCOM Account ID (e.g. 1029384756) to log the power outage directly on our system."
+    },
+    "2.2": {
+      "title": "Billing & Meter Issues",
+      "reply": "For billing disputes or meter defects under BESCOM:\n- Call billing helpline: 080-22441912\n- File a billing dispute ticket: https://bescom.co.in/billing\n- Our ward desk can escalate billing errors. Reply with your complaint details."
+    },
+    "2.3": {
+      "title": "Speak to Ward Representative",
+      "reply": "Transferring your chat to the Ward 4 Campaign Representative. Please hold..."
+    },
+    "2.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "3.1": {
+      "title": "Report Water Leakage",
+      "reply": "To report a water leakage, please reply with the street name and nearest landmark. You can also upload a photo on our portal: https://bwssb.karnataka.gov.in/leak"
+    },
+    "3.2": {
+      "title": "Subsidized Water Tanker",
+      "reply": "Water tanker booking portal:\nDr. Ramesh Gowda's desk provides subsidized BWSSB water tankers to water-scarce blocks. Please enter your BWSSB connection ID or reply with your street address to book."
+    },
+    "3.3": {
+      "title": "Sewage Blockage",
+      "reply": "For sewage overflow or blocked drains:\n- Call BWSSB helpline: 1916\n- A cleaning crew is active in Ward 4. Reply with the street name to dispatch the jetting machine."
+    },
+    "3.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "4.1": {
+      "title": "Medical Emergency",
+      "reply": "🚨 Medical Emergency:\n- State Ambulance: Call 108\n- Local Namma Clinic ambulance cell: 080-25678910\n- KC General Hospital (Nearest): 080-23340011"
+    },
+    "4.2": {
+      "title": "Police Control Room",
+      "reply": "👮 Police Emergencies:\n- Police Helpline: 112\n- Local Police Station (Malleshwaram): 080-22942513\n- Dr. Ramesh Gowda's Women Safety Cell: 9880198801"
+    },
+    "4.3": {
+      "title": "Fire & Safety",
+      "reply": "🔥 Fire Control:\n- Fire Helpline: 101\n- High Ground Fire Station: 080-22971500"
+    },
+    "4.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "5.1": {
+      "title": "Report a Pothole",
+      "reply": "Please describe the pothole location in our ward. We log pothole complaints directly with the BBMP ward engineers. We aim to repair within 48 hours."
+    },
+    "5.2": {
+      "title": "Streetlight Failure",
+      "reply": "To report a streetlight failure, please reply with the nearest building address or the pole ID. Repair SLA is 48 hours."
+    },
+    "5.3": {
+      "title": "Garbage Clearance",
+      "reply": "For missed garbage pickup or illegal dumping: Reply with the block details. The ward auto-tipper supervisor will be notified."
+    },
+    "5.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "6.1": {
+      "title": "Namma Clinic Locations",
+      "reply": "🏥 Namma Clinic (Ward 4):\nOpen: 9:00 AM - 4:00 PM (Mon-Sat)\nLocation: Ward Office Compound, 4th Main road.\nServices: Free doctor consultations, basic diagnostics, and medicines."
+    },
+    "6.2": {
+      "title": "Free Health Camp",
+      "reply": "🏥 Next Medical Camp:\nDate: Saturday, Aug 22\nTime: 9:00 AM - 1:00 PM\nLocation: Ward 4 Community Center\nServices: Free eye checks, cardiology screening, and free distribution of prescribed medicines."
+    },
+    "6.3": {
+      "title": "School Upgrades",
+      "reply": "🎓 School Modernization:\nDr. Ramesh Gowda's education desk has upgraded 3 local government primary schools with smart-boards, computer classrooms, and renovated playgrounds."
+    },
+    "6.4": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    },
+    "7.1": {
+      "title": "Register Complaint",
+      "reply": "We have enabled direct grievance logging. Please describe your grievance. Begin your reply with the word 'GRIEVANCE' followed by your issue description."
+    },
+    "7.2": {
+      "title": "Check Complaint Status",
+      "reply": "To check your grievance status, please enter your 6-digit Grievance Tracker ID (e.g. GR-123456)."
+    },
+    "7.3": {
+      "title": "Back to Main Menu",
+      "reply": "Namaskara! 🙏 This is the official automated channel of MLA Dr. Ramesh Gowda for Bengaluru, Karnataka. \n\nWe want to ensure your voice is heard! Reply with the number of the service you need:\n\n1️⃣ Know Your MLA & Report Card\n2️⃣ Electricity Issues (BESCOM)\n3️⃣ Water Supply/Sewage (BWSSB)\n4️⃣ Emergency Helpline Contacts\n5️⃣ Roads, Potholes & BBMP Grievances\n6️⃣ Free Healthcare & Namma Clinics\n7️⃣ Direct Grievance Registration"
+    }
+  }
+}

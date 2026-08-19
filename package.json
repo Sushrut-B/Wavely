@@ -1,0 +1,36 @@
+{
+  "name": "whatsapp-saas",
+  "version": "0.1.0",
+  "description": "WhatsApp SaaS Platform - Automate, Broadcast, Campaign, Marketing, Multi-Agent, OTP",
+  "main": "server/src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "server:build": "cd server && npm run build",
+    "server:start": "cd server && npm start",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "migrations": "cd server && npm run migrations"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "keywords": [
+    "whatsapp",
+    "saas",
+    "automation",
+    "broadcast",
+    "campaigns",
+    "otp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
