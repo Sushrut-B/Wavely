@@ -495,6 +495,8 @@ See `server/src/services/RazorpayService.js` for all payment methods.
 
 ## 🤝 Contributing
 
+This project is open-source and welcomes contributions from the community! Feel free to open issues, submit pull requests, or suggest new features.
+
 1. Create feature branch: `git checkout -b feature/amazing-feature`
 2. Commit changes: `git commit -m 'Add amazing feature'`
 3. Push to branch: `git push origin feature/amazing-feature`
