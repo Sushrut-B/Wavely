@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
-  namespace: whatsapp-saas
+  namespace: wavely
 spec:
   accessModes:
     - ReadWriteOnce
@@ -16,7 +16,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: postgres
-  namespace: whatsapp-saas
+  namespace: wavely
 spec:
   serviceName: postgres-service
   replicas: 1
@@ -35,7 +35,7 @@ spec:
         - containerPort: 5432
         env:
         - name: POSTGRES_DB
-          value: "whatsapp_saas"
+          value: "wavely"
         - name: POSTGRES_USER
           value: "postgres"
         - name: POSTGRES_PASSWORD
@@ -73,7 +73,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: postgres-service
-  namespace: whatsapp-saas
+  namespace: wavely
 spec:
   selector:
     app: postgres

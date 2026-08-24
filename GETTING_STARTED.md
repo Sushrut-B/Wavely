@@ -1,7 +1,7 @@
 # Getting Started Guide
 
 ## ✅ Current State
-Your WhatsApp SaaS application is fully set up and running locally!
+Your Wavely application is fully set up and running locally!
 
 ### Access Your Application
 
@@ -76,7 +76,7 @@ brew install postgresql
 brew services start postgresql
 
 # Create database
-createdb whatsapp_saas
+createdb wavely
 ```
 
 Once database is running, the backend will automatically sync models on startup.
@@ -281,4 +281,4 @@ lsof -i :3001  # Backend
 
 **Happy Coding! 🚀**
 
-Your WhatsApp SaaS platform is ready for development. Start with the PostgreSQL setup and then begin integrating WhatsApp Business API credentials.
+Your Wavely platform is ready for development. Start with the PostgreSQL setup and then begin integrating WhatsApp Business API credentials.

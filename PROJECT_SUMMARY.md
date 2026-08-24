@@ -1,4 +1,4 @@
-# WhatsApp SaaS - Project Summary
+# Wavely - Project Summary
 
 ## 📊 Project Overview
 
@@ -134,7 +134,7 @@ k8s/
 
 ### 1. Local Development (5 minutes)
 ```bash
-cd /Users/ram/Official/Projects_NDS/NDSProducts/WhatsAppAPI
+cd Wavely
 chmod +x init.sh
 ./init.sh
 

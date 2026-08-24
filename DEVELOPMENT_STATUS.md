@@ -1,4 +1,4 @@
-# WhatsApp SaaS Development Status
+# Wavely Development Status
 
 ## ✅ Current Status: DEVELOPMENT SERVERS RUNNING
 
@@ -55,7 +55,7 @@ docker-compose up -d postgres redis
 
 # Option B: Local PostgreSQL
 # Install PostgreSQL and create database:
-# CREATE DATABASE whatsapp_saas;
+# CREATE DATABASE wavely;
 # CREATE USER postgres WITH PASSWORD 'postgres';
 ```
 

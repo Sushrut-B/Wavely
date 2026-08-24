@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-saas",
+  "name": "wavely",
   "version": "0.1.0",
   "description": "WhatsApp SaaS Platform - Automate, Broadcast, Campaign, Marketing, Multi-Agent, OTP",
   "main": "server/src/index.js",

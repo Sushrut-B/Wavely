@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# WhatsApp SaaS - Project Initialization Script
+# Wavely - Project Initialization Script
 # This script automates the initial setup of the project
 
 set -e
 
-echo "🚀 WhatsApp SaaS Platform - Initialization Script"
+echo "🚀 Wavely Platform - Initialization Script"
 echo "=================================================="
 echo ""
 

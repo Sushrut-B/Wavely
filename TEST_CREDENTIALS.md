@@ -14,7 +14,7 @@ PostgreSQL is fully configured with test users. **All three accounts are now ver
 | **Email** | `admin@whatsapp.com` |
 | **Password** | `
 ` |
-| **Organization** | WhatsApp SaaS |
+| **Organization** | Wavely |
 | **Full Name** | Admin User |
 
 ### Account 2: Standard User
@@ -61,7 +61,7 @@ Initial passwords were stored in plain text, but the authentication system uses 
 ## Database Status
 
 ✅ **PostgreSQL 15.18** - Running on localhost:5432  
-✅ **Database**: `whatsapp_saas` created  
+✅ **Database**: `wavely` created  
 ✅ **Tables**: users, organizations  
 ✅ **Test Data**: 3 users with bcrypt-hashed passwords  
 ✅ **Authentication**: Passwords verified working with bcrypt  
@@ -91,7 +91,7 @@ Each login returns a valid JWT token valid for 7 days.
 ```
 ✓ Server running on port 3001
 ✓ Environment: development
-✓ Database: Connected to whatsapp_saas
+✓ Database: Connected to wavely
 ```
 
 ---
@@ -100,7 +100,7 @@ Each login returns a valid JWT token valid for 7 days.
 
 ### Check Database Users
 ```bash
-psql -d whatsapp_saas -c "SELECT email, \"fullName\" FROM \"users\";"
+psql -d wavely -c "SELECT email, \"fullName\" FROM \"users\";"
 ```
 
 ### Check API Health
@@ -169,16 +169,16 @@ brew services status postgresql@15
 ## Troubleshooting
 
 ### Login works but account locked/suspended?
-- Check `isActive` status: `psql -d whatsapp_saas -c "SELECT email, isActive FROM users;"`
+- Check `isActive` status: `psql -d wavely -c "SELECT email, isActive FROM users;"`
 - All test accounts have `isActive = true`
 
 ### "Invalid credentials" error (after Feb 2026 fix)
 - This should not occur with the test accounts provided
 - Credentials have been verified with bcrypt hashing
-- Check database user exists: `psql -d whatsapp_saas -c "SELECT email FROM users;"`
+- Check database user exists: `psql -d wavely -c "SELECT email FROM users;"`
 - Check PostgreSQL is running: `brew services status postgresql@15`
-- Verify database exists: `psql -l | grep whatsapp_saas`
-- Verify user table exists: `psql -d whatsapp_saas -c "\dt"`
+- Verify database exists: `psql -l | grep wavely`
+- Verify user table exists: `psql -d wavely -c "\dt"`
 
 ### API not responding
 - Check backend server is running on port 3001

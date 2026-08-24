@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: client
-  namespace: whatsapp-saas
+  namespace: wavely
 spec:
   replicas: 2
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: client
-        image: whatsapp-saas-client:latest
+        image: wavely-client:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
@@ -45,7 +45,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: client-service
-  namespace: whatsapp-saas
+  namespace: wavely
 spec:
   selector:
     app: client

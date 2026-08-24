@@ -6,7 +6,7 @@ dotenv.config();
 const isProduction = process.env.NODE_ENV === 'production';
 
 export const sequelize = new Sequelize(
-  process.env.DB_NAME || 'whatsapp_saas',
+  process.env.DB_NAME || 'wavely',
   process.env.DB_USER || 'postgres',
   process.env.DB_PASSWORD || 'postgres',
   {

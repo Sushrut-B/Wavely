@@ -1,4 +1,4 @@
-# ✅ WhatsApp SaaS Platform - READY FOR DEVELOPMENT
+# ✅ Wavely Platform - READY FOR DEVELOPMENT
 
 ## Current Status: Both servers running and responding
 
@@ -55,7 +55,7 @@
 
 #### Using Docker Compose (Easiest)
 ```bash
-cd /Users/ram/Official/Projects_NDS/NDSProducts/WhatsAppAPI
+cd Wavely
 docker-compose up -d
 ```
 
@@ -66,7 +66,7 @@ brew install postgresql
 brew services start postgresql
 
 # Create database
-createdb whatsapp_saas
+createdb wavely
 ```
 
 Once running, the backend will auto-sync database models.
@@ -380,7 +380,7 @@ rm -rf node_modules/.cache
 
 ## You're All Set! 🎉
 
-Your WhatsApp SaaS application is:
+Your Wavely application is:
 - ✅ Fully scaffolded
 - ✅ Running locally
 - ✅ Ready for feature development

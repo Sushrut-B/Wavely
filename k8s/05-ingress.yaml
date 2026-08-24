@@ -1,15 +1,15 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: whatsapp-saas-ingress
-  namespace: whatsapp-saas
+  name: wavely-ingress
+  namespace: wavely
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   rules:
-  - host: whatsapp-saas.com
+  - host: wavely.com
     http:
       paths:
       - path: /
@@ -19,7 +19,7 @@ spec:
             name: client-service
             port:
               number: 80
-  - host: api.whatsapp-saas.com
+  - host: api.wavely.com
     http:
       paths:
       - path: /

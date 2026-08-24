@@ -1,6 +1,6 @@
-# WhatsApp SaaS - Setup & Configuration Guide
+# Wavely - Setup & Configuration Guide
 
-This guide walks you through setting up the WhatsApp SaaS platform locally and on Hostinger Kubernetes.
+This guide walks you through setting up the Wavely platform locally and on Hostinger Kubernetes.
 
 ## 📋 Table of Contents
 
@@ -27,8 +27,8 @@ Ensure you have installed:
 
 ```bash
 cd ~/Official/Projects_NDS/NDSProducts/
-git clone <your-repo-url> WhatsAppAPI
-cd WhatsAppAPI
+git clone <your-repo-url> Wavely
+cd Wavely
 ```
 
 ### Step 3: Install Dependencies
@@ -57,7 +57,7 @@ PORT=5000
 NODE_ENV=development
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=whatsapp_saas
+DB_NAME=wavely
 DB_USER=postgres
 DB_PASSWORD=your_password
 REDIS_HOST=localhost
@@ -85,7 +85,7 @@ VITE_API_URL=http://localhost:5000
 
 ```bash
 # Create database
-createdb whatsapp_saas -U postgres
+createdb wavely -U postgres
 
 # Start backend (migrations will run automatically)
 cd server && npm run dev
@@ -167,12 +167,12 @@ docker-compose up server
 
 ```bash
 # Build images
-docker build -t your-registry/whatsapp-saas-server:1.0.0 -f server/Dockerfile .
-docker build -t your-registry/whatsapp-saas-client:1.0.0 -f client/Dockerfile .
+docker build -t your-registry/wavely-server:1.0.0 -f server/Dockerfile .
+docker build -t your-registry/wavely-client:1.0.0 -f client/Dockerfile .
 
 # Push to registry
-docker push your-registry/whatsapp-saas-server:1.0.0
-docker push your-registry/whatsapp-saas-client:1.0.0
+docker push your-registry/wavely-server:1.0.0
+docker push your-registry/wavely-client:1.0.0
 ```
 
 ### Step 2: Get Kubeconfig
@@ -193,8 +193,8 @@ kubectl get nodes
 
 Edit `k8s/03-server.yaml` and `k8s/04-client.yaml`:
 ```yaml
-image: your-registry/whatsapp-saas-server:1.0.0  # Update this
-image: your-registry/whatsapp-saas-client:1.0.0  # Update this
+image: your-registry/wavely-server:1.0.0  # Update this
+image: your-registry/wavely-client:1.0.0  # Update this
 ```
 
 ### Step 5: Update Secrets
@@ -221,7 +221,7 @@ kubectl apply -f k8s/04-client.yaml
 kubectl apply -f k8s/05-ingress.yaml
 
 # Monitor deployment
-kubectl get pods -n whatsapp-saas -w
+kubectl get pods -n wavely -w
 ```
 
 ### Step 7: Configure Ingress
@@ -241,10 +241,10 @@ kubectl apply -f k8s/05-ingress.yaml
 
 ```bash
 # Get LoadBalancer IP or Hostname
-kubectl get svc client-service -n whatsapp-saas
+kubectl get svc client-service -n wavely
 
 # Or via Ingress
-kubectl get ingress -n whatsapp-saas
+kubectl get ingress -n wavely
 ```
 
 ---
@@ -331,10 +331,10 @@ Send response via WhatsApp API
 
 ```bash
 # Scale backend
-kubectl scale deployment server --replicas=5 -n whatsapp-saas
+kubectl scale deployment server --replicas=5 -n wavely
 
 # Scale frontend
-kubectl scale deployment client --replicas=3 -n whatsapp-saas
+kubectl scale deployment client --replicas=3 -n wavely
 ```
 
 ### Auto-scaling (HPA)
@@ -366,20 +366,20 @@ CREATE INDEX idx_campaigns_status
 
 ```bash
 # View server logs
-kubectl logs -f deployment/server -n whatsapp-saas
+kubectl logs -f deployment/server -n wavely
 
 # View client logs
-kubectl logs -f deployment/client -n whatsapp-saas
+kubectl logs -f deployment/client -n wavely
 
 # View all events
-kubectl get events -n whatsapp-saas --sort-by='.lastTimestamp'
+kubectl get events -n wavely --sort-by='.lastTimestamp'
 ```
 
 ### Database Monitoring
 
 ```bash
 # Connect to PostgreSQL
-kubectl exec -it postgres-0 -n whatsapp-saas -- psql -U postgres
+kubectl exec -it postgres-0 -n wavely -- psql -U postgres
 
 # Check connections
 SELECT datname, count(*) FROM pg_stat_activity GROUP BY datname;
@@ -389,7 +389,7 @@ SELECT datname, count(*) FROM pg_stat_activity GROUP BY datname;
 
 ```bash
 # Connect to Redis
-kubectl exec -it redis-0 -n whatsapp-saas -- redis-cli
+kubectl exec -it redis-0 -n wavely -- redis-cli
 
 # Check memory
 INFO memory
@@ -416,7 +416,7 @@ kill -9 <PID>
 
 ```bash
 # Check PostgreSQL
-psql -h localhost -U postgres -d whatsapp_saas
+psql -h localhost -U postgres -d wavely
 
 # If using Docker
 docker-compose exec postgres psql -U postgres
@@ -438,13 +438,13 @@ systemctl status redis-server     # Linux
 
 ```bash
 # Check logs
-kubectl logs -f <pod-name> -n whatsapp-saas
+kubectl logs -f <pod-name> -n wavely
 
 # Describe pod for events
-kubectl describe pod <pod-name> -n whatsapp-saas
+kubectl describe pod <pod-name> -n wavely
 
 # Check resource limits
-kubectl top pods -n whatsapp-saas
+kubectl top pods -n wavely
 ```
 
 ### CORS Issues
@@ -461,7 +461,7 @@ app.use(cors({
 
 ```bash
 # Check image exists in registry
-docker pull your-registry/whatsapp-saas-server:1.0.0
+docker pull your-registry/wavely-server:1.0.0
 
 # Update image pull policy if using local images
 # Change imagePullPolicy: IfNotPresent in k8s manifests

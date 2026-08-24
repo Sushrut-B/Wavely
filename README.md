@@ -1,4 +1,4 @@
-# WhatsApp SaaS Platform - Ram Taluri
+# Wavely Platform - Ram Taluri
 
 A comprehensive SaaS platform for automating, broadcasting, and managing customer communications via WhatsApp Business API.
 
@@ -197,7 +197,7 @@ WhatsAppAPI/
 
 #### 1. Clone & Setup
 ```bash
-cd WhatsAppAPI
+cd Wavely
 npm install
 ```
 
@@ -294,17 +294,17 @@ npm run dev
 
 ### Build Images
 ```bash
-docker build -t whatsapp-saas-server:latest -f server/Dockerfile .
-docker build -t whatsapp-saas-client:latest -f client/Dockerfile .
+docker build -t wavely-server:latest -f server/Dockerfile .
+docker build -t wavely-client:latest -f client/Dockerfile .
 ```
 
 ### Push to Registry
 ```bash
-docker tag whatsapp-saas-server:latest your-registry/whatsapp-saas-server:latest
-docker push your-registry/whatsapp-saas-server:latest
+docker tag wavely-server:latest your-registry/wavely-server:latest
+docker push your-registry/wavely-server:latest
 
-docker tag whatsapp-saas-client:latest your-registry/whatsapp-saas-client:latest
-docker push your-registry/whatsapp-saas-client:latest
+docker tag wavely-client:latest your-registry/wavely-client:latest
+docker push your-registry/wavely-client:latest
 ```
 
 ---
@@ -336,18 +336,18 @@ kubectl apply -f k8s/05-ingress.yaml
 ### 4. Monitor Deployments
 ```bash
 # Check pod status
-kubectl get pods -n whatsapp-saas
+kubectl get pods -n wavely
 
 # View logs
-kubectl logs -f deployment/server -n whatsapp-saas
+kubectl logs -f deployment/server -n wavely
 
 # Check services
-kubectl get svc -n whatsapp-saas
+kubectl get svc -n wavely
 ```
 
 ### 5. Scale Deployments
 ```bash
-kubectl scale deployment server --replicas=3 -n whatsapp-saas
+kubectl scale deployment server --replicas=3 -n wavely
 ```
 
 ---
@@ -510,7 +510,7 @@ This project is licensed under the MIT License.
 
 ## 📧 Support
 
-For questions or issues, contact support@whatsapp-saas.com
+For questions or issues, contact support@wavely.com
 
 ---
 

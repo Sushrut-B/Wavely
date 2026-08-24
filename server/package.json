@@ -1,7 +1,7 @@
 {
-  "name": "whatsapp-saas-server",
+  "name": "wavely-server",
   "version": "0.1.0",
-  "description": "Backend server for WhatsApp SaaS Platform",
+  "description": "Backend server for Wavely Platform",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

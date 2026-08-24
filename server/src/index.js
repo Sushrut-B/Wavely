@@ -76,7 +76,7 @@ app.listen(PORT, () => {
 
           const defaultOrg = await Organization.create({
             id: uuidv4(),
-            name: 'WhatsApp SaaS Org',
+            name: 'Wavely Org',
           });
 
           const hashedAdminPassword = await bcrypt.default.hash('Admin@2024', 10);
