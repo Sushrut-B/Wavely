@@ -502,29 +502,4 @@ See `server/src/services/RazorpayService.js` for all payment methods.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 📧 Support
-
-For questions or issues, contact support@wavely.com
-
----
-
-## 🎯 Roadmap
-
-- [ ] AI-powered chatbot responses
-- [ ] Advanced analytics dashboard
-- [ ] WhatsApp Media management
-- [ ] Custom workflow builder
-- [ ] Twilio integration
-- [ ] SMS backup delivery
-- [ ] Mobile app
-- [ ] Advanced segmentation
-
----
-
-**Last Updated:** May 11, 2026
+**Last Updated:** August 24, 2026
